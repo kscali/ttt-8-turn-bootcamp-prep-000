@@ -39,8 +39,9 @@ def turn(board)
     move(board, index, value = "X")
     
   elsif valid_move?(board, index) == false 
-  puts "Please enter 1-9:"  
+    display(board)
   
-  turn(board)
-end
+    puts "Please enter 1-9:"  
+  
+  end
 end  
