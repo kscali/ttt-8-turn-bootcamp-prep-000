@@ -38,12 +38,7 @@ def turn(board)
   
   index = input_to_index(user_input)
   
-  
-  if valid_move?(board, index) == false 
-    
-    turn(board) 
-    
-  elsif valid_move?(board, index) == true
+  if valid_move?(board, index) == true
     move(board, index, value = "X")
     display_board(board)
     
